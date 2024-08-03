@@ -1,0 +1,54 @@
+/* body{
+    background-image: url('./background3.jpg');
+    background-size: cover;
+    background-position: center;
+}  */
+.container { 
+    background-image: url('./background3.jpg');
+    background-size: cover;
+    background-position: center; 
+    padding: 5vw;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; 
+    margin: 10vh auto;
+     color: #fff;
+    text-align: center;
+    backdrop-filter: blur(10px);  
+    /* Add a subtle blur effect to make text more readable */  }
+
+ .container:hover {
+        transform: scale(1.05);
+      }
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-decoration: underline;
+    padding:4px;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+ol {
+    text-align: left;
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+}
+
+.Image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+} 
