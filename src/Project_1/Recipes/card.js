@@ -10,6 +10,7 @@ function CardComponent(prop) {
             navigate(`/${id}`)
     }
   return (
+  
     <Card className="card">
       <Card.Img variant="top" src={data.image}  className="card-img-top" />
       <Card.Body className="card-body">

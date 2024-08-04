@@ -1,14 +1,31 @@
-import React from "react"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { createContext, useEffect, useState } from "react"
+import {  BrowserRouter, Route, Routes } from "react-router-dom";
 import RecipeList from "./Recipes";
 import TaskManager from "./Todo";
 import { Login } from "./login";
 import { LogOut } from "./logout";
 import CardDetails from "./Recipes/cardDetails";
+import axios from "axios";
 
+
+export const Profile=createContext()
 const MainPage = (props) => {
+  const[data,setData]=useState([])
+  useEffect(()=>{
+    console.log("useeffect executing")
+    fetchData()
+},[])
+const fetchData=async ()=>{
+    const response= await axios("https://dummyjson.com/recipes")
+    if(response.status===200){
+        setData(response.data.recipes)
+        console.log(response.data.recipes)
+    }
+
+}
   return (
-   <BrowserRouter>
+  <Profile.Provider value={{data}}>
+    <BrowserRouter>
    <Routes>
     <Route path="/" element={<Login/>}></Route>
     <Route path="/Recipes" element={<RecipeList/>}></Route>
@@ -17,6 +34,8 @@ const MainPage = (props) => {
     <Route path="/Logout" element={<LogOut/>}></Route>
    </Routes>
    </BrowserRouter>
+   </Profile.Provider>
+   
   )
 };
 

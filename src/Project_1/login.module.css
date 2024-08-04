@@ -1,0 +1,199 @@
+
+
+  .login_container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px gray,3px -3px 10px gray;
+    border-radius: 5px;
+  
+  margin-top:20vh;
+  }
+  
+  .login_buttons {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid; */
+    /* margin-left: -50px; */
+    gap:1vw;
+    margin-bottom: 20px;
+  }
+  
+  .login_btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    width: 48%;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .google {
+    background-color: #db4437;
+  }
+  
+  .divider {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .divider span {
+    background: #fff;
+    padding: 0 10px;
+  }
+  
+  .login_form {
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+  }
+  
+  .input_group {
+    margin-bottom: 15px;
+  }
+  
+  .input_group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .forgot_password {
+    color: #db4437;
+    text-decoration: none;
+    font-size: small;
+    margin-left: 7vw;
+  }
+  
+  .primary {
+    background-color: #4285f4;
+    margin-left:20vw ;
+  }
+  
+  .signup_link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup_link a {
+    color: #4285f4;
+    text-decoration: none;
+  }
+  
+
+  /* @media only screen and (max-width:319px){
+    .forgot_password{
+      margin-left: 17vw;;
+    }
+    .primary{
+      margin-left: 20vw;
+    }
+  } */
+  @media only screen and (min-width:320px){
+    .forgot_password{
+      margin-left: 17vw;
+    }
+    .primary{
+      margin-left: 19vw;
+    }
+    .login_container{
+     
+    }
+  }
+  @media only screen and (min-width:375px){
+    .forgot_password{
+      margin-left: 24vw;;
+    }
+    .primary{
+      margin-left: 20vw;
+    }
+  }
+  @media only screen and (min-width:425px){
+    .forgot_password{
+      margin-left: 27vw;;
+    }
+    .primary{
+      margin-left: 21vw;
+    }
+  }
+  @media only screen and (min-width:507px){
+    .forgot_password{
+      margin-left: 22vw;;
+    }
+    .primary{
+      margin-left: 16vw;
+    }
+  }
+  @media only screen and (min-width:621px){
+    .forgot_password{
+      margin-left: 18vw;;
+    }
+    .primary{
+      margin-left: 13vw;
+    }
+  }
+  @media only screen and (min-width:760px){
+    .forgot_password{
+      margin-left: 15vw;;
+    }
+    .primary{
+      margin-left: 11vw;
+    }
+  }
+  @media only screen and (min-width:912px){
+    .forgot_password{
+      margin-left: 13vw;;
+    }
+    .primary{
+      margin-left: 9vw;
+    }
+  }
+  @media only screen and (min-width:1052px){
+    .forgot_password{
+      margin-left: 11vw;;
+    }
+    .primary{
+      margin-left: 8vw;
+    }
+  }
+  @media only screen and (min-width:1243px){
+    .forgot_password{
+      margin-left: 9vw;;
+    }
+    .primary{
+      margin-left: 7vw;
+    }
+  }
+  @media only screen and (min-width:1520px){
+    .forgot_password{
+      margin-left: 7vw;;
+    }
+    .primary{
+      margin-left: 6vw;
+    }
+  }
+  @media only screen and (min-width:1953px){
+    .forgot_password{
+      margin-left: 5vw;;
+    }
+    .primary{
+      margin-left: 4vw;
+    }
+  }

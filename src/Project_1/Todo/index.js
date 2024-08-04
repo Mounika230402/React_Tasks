@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './index.css';
 import NavBar from '../Recipes/Navbar';
+import Toast from '../../Toasts';
+import { toast, ToastContainer } from 'react-toastify';
 
 const TaskManager = () => {
   const [tasks, setTasks] = useState([]);
@@ -8,28 +10,38 @@ const TaskManager = () => {
   const [taskName, setTaskName] = useState('');
   const [priority, setPriority] = useState('Top Priority');
   const [deadline, setDeadline] = useState('');
+  const[error,setError]=useState(false)
 
   const addTask = () => {
     if (taskName && priority && deadline) {
       setTasks([...tasks, { taskName, priority, deadline }]);
+      toast.success("Task is added")
       setTaskName('');
       setPriority('Top Priority');
       setDeadline('');
+    }
+    else if(taskName===""){
+      toast.error("Enter TaskName fields")
+    }
+    else {
+      toast.error("Enter Deadline fields")
     }
   };
 
   const completeTask = (index) => {
     const taskToComplete = tasks.splice(index, 1)[0];
     setCompletedTasks([...completedTasks, taskToComplete]);
+    toast.success("Task is completed")
     setTasks([...tasks]);
   };
 
   return (
    <>
    <NavBar className="navbar"/>
+   <ToastContainer position='top-right' style={{marginTop:"5vw"}}/>
     <div className="container-1">
       <div className="task-manager">
-        <h1>Task Management</h1>
+        <h1>Task Tracker</h1>
         <div className="input-group">
           <input
             type="text"
@@ -49,7 +61,7 @@ const TaskManager = () => {
           />
           <button className='btn btn-primary' onClick={addTask}>Add Task</button>
         </div>
-
+       
         <div className="task-list">
           <h2>Upcoming Tasks</h2>
           <table>
@@ -62,6 +74,7 @@ const TaskManager = () => {
               </tr>
             </thead>
             <tbody>
+             
               {tasks.map((task, index) => (
                 <tr key={index}>
                   <td>{task.taskName}</td>

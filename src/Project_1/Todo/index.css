@@ -1,6 +1,6 @@
 .container-1 {
     width: 60%;
-    margin: auto;
+    margin: auto ;
     padding:20px;
     border: 1px solid transparent;
     box-shadow: 3px 3px 3px gray, 3px -3px 3px gray, -3px -3px 3px gray,-3px 3px 3px gray;
