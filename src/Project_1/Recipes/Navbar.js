@@ -27,6 +27,11 @@ const NavBar=()=>{
           </NavLink>
         </li>
         <li className="nav-item" style={listStyle}>
+          <NavLink to={"/favorites"} style={linkStyle}>
+            Favorites
+          </NavLink>
+        </li>
+        <li className="nav-item" style={listStyle}>
           {/* <a className="nav-link" href="#">
             Settings
           </a> */}

@@ -33,6 +33,7 @@
   .card {
     width: 18rem;
     margin-top: 2vh;
+    background-color: grey;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -74,4 +75,18 @@
   
   .card-button:hover {
     background-color: #0056b3;
+  }
+
+  .heart-icon {
+    /* border: 1px solid black; */
+    /* outline: grey; */
+    font-size: 24px;
+    color: white;
+    /* background-color: grey; */
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .heart-icon.clicked {
+    color: red;
   }

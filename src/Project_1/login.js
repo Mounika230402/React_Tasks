@@ -1,5 +1,5 @@
 // import { useNavigate } from "react-router-dom";
-import { useLogin } from "../github";
+import { useLogin } from "./github";
 import styles from'./login.module.css'
 import logo from "./github-mark-white.png"
 import logo1 from "./facebook.png"

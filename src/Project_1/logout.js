@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useLogout } from "../github";
+import { useLogout } from "./github";
 import styles from './login.module.css'
 import { useNavigate } from "react-router-dom";
 export const LogOut = () => {

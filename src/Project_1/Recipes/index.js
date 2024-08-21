@@ -34,7 +34,7 @@ function RecipeList(){
                 {
                     searched.map(each=>{
 
-                        return <CardComponent data={each}/>
+                        return <CardComponent data={each} key={each.id}/>
                     })
                 }
                 </>:
@@ -42,7 +42,7 @@ function RecipeList(){
                 {
                     searched.length===0 && recipe.length>0 ?<h1>No Results</h1>:
                     data.map(each=>{
-                        return <CardComponent data={each}/>
+                        return <CardComponent data={each} key={each.id}/>
                     })
                 }
                 </>
